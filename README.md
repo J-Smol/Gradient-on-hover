@@ -1,7 +1,29 @@
 # Gradient-on-hover
-Gradient effect, that track mouse movement, on hover
+<b>Gradient effect, that track mouse movement, on hover</b>
 
 To install the buttons on the site, follow the instructions below:
+
+<ol>
+<li>
+Copy the jsmbutton.min.css and jsmbutton.min.js files to your site folders
+</li>
+<li>
+Write down the path to them, for example
+```
+    `<link rel="stylesheet" type="text/css" href="rectangle.css">`
+    `<script type ="text/javascript" src="rectangle.js"> </script>`
+```
+</li>
+	<li>
+		The button in the HTML file should be
+		```
+		<button class = "jsmbtn_rect jsmbtn_lg jsmbtn_15inv» onmousemove = "mouseCoords (event)">
+			<span> Hover me! </span>
+		</button>
+			```
+	</li>
+
+</ol>
 
 1. Copy the jsmbutton.min.css and jsmbutton.min.js files to your site folders
 
