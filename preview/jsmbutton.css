@@ -1,0 +1,346 @@
+.jsmbtn_rect,
+.jsmbtn_simple,
+.jsmbtn_rounded,
+.jsmbtn_round {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 10px 0;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  text-align: center;
+}
+.jsmbtn_rect span,
+.jsmbtn_rect i,
+.jsmbtn_simple span,
+.jsmbtn_simple i,
+.jsmbtn_rounded span,
+.jsmbtn_rounded i,
+.jsmbtn_round span,
+.jsmbtn_round i {
+  position: relative;
+  pointer-events: none;
+}
+.jsmbtn_rect::before,
+.jsmbtn_simple::before,
+.jsmbtn_rounded::before,
+.jsmbtn_round::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+.jsmbtn_rect:hover::before,
+.jsmbtn_simple:hover::before,
+.jsmbtn_rounded:hover::before,
+.jsmbtn_round:hover::before {
+  --size: 400px;
+}
+
+.jsmbtn_simple {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.jsmbtn_rounded {
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+}
+
+.jsmbtn_round {
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+}
+
+.jsmbtn_sm {
+  width: 150px;
+}
+.jsmbtn_md {
+  width: 200px;
+}
+.jsmbtn_lg {
+  width: 300px;
+}
+.jsmbtn_xl {
+  width: 350px;
+}
+
+.jsmbtn_round.jsmbtn_sm {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+}
+
+.jsmbtn_round.jsmbtn_md {
+  width: 120px;
+  height: 120px;
+}
+
+.jsmbtn_round.jsmbtn_lg {
+  width: 150px;
+  height: 150px;
+}
+
+.jsmbtn_round.jsmbtn_xl {
+  width: 180px;
+  height: 180px;
+}
+
+
+.jsmbtn_1 {
+  background: #f6d242;
+}
+
+.jsmbtn_1::before {
+  background: radial-gradient(circle closest-side, #ff52e5, transparent);
+}
+
+.jsmbtn_2 {
+  background: #fccf31;
+}
+
+.jsmbtn_2::before {
+  background: radial-gradient(circle closest-side, #f55555, transparent);
+}
+
+.jsmbtn_3 {
+  background: #ffbf46;
+}
+
+.jsmbtn_3::before {
+  background: radial-gradient(circle closest-side, #8acb88, transparent);
+}
+
+.jsmbtn_4 {
+  background: #f1ca74;
+}
+
+.jsmbtn_4::before {
+  background: radial-gradient(circle closest-side, #a64db6, transparent);
+}
+
+.jsmbtn_5 {
+  background: #90f7ec;
+}
+
+.jsmbtn_5::before {
+  background: radial-gradient(circle closest-side, #32ccbc, transparent);
+}
+
+.jsmbtn_6 {
+  background: #81ffef;
+}
+
+.jsmbtn_6::before {
+  background: radial-gradient(circle closest-side, #f067b4, transparent);
+}
+
+.jsmbtn_7 {
+  background: #5efce8;
+}
+
+.jsmbtn_7::before {
+  background: radial-gradient(circle closest-side, #736efe, transparent);
+}
+
+.jsmbtn_8 {
+  background: #81fbb8;
+}
+
+.jsmbtn_8::before {
+  background: radial-gradient(circle closest-side, #28c76f, transparent);
+}
+
+.jsmbtn_9 {
+  background: #79f1a4;
+}
+
+.jsmbtn_9::before {
+  background: radial-gradient(circle closest-side, #0e5cad, transparent);
+}
+
+.jsmbtn_10 {
+  background: #83fc33;
+}
+
+.jsmbtn_10::before {
+  background: radial-gradient(circle closest-side, #24d0cd, transparent);
+}
+
+.jsmbtn_11 {
+  background: #e80505;
+}
+
+.jsmbtn_11::before {
+  background: radial-gradient(circle closest-side, #fdd819, transparent);
+}
+
+.jsmbtn_12 {
+  background: #f6416c;
+}
+
+.jsmbtn_12::before {
+  background: radial-gradient(circle closest-side, #fff6B7, transparent);
+}
+
+.jsmbtn_13 {
+  background: #d6308d;
+}
+
+.jsmbtn_13::before {
+  background: radial-gradient(circle closest-side, #fed148, transparent);
+}
+
+.jsmbtn_14 {
+  background: #d765e3;
+}
+
+.jsmbtn_14::before {
+  background: radial-gradient(circle closest-side, #8e38e3, transparent);
+}
+
+.jsmbtn_15 {
+  background: #8e37e4;
+}
+
+.jsmbtn_15::before {
+  background: radial-gradient(circle closest-side, #fb2399, transparent);
+}
+
+
+.jsmbtn_1inv {
+  background: #ff52e5;
+}
+
+.jsmbtn_1inv::before {
+  background: radial-gradient(circle closest-side, #f6d242, transparent);
+}
+
+.jsmbtn_2inv {
+  background: #f55555;
+}
+
+.jsmbtn_2inv::before {
+  background: radial-gradient(circle closest-side, #fccf31, transparent);
+}
+
+.jsmbtn_3inv {
+  background: #8acb88;
+}
+
+.jsmbtn_3inv::before {
+  background: radial-gradient(circle closest-side, #ffbf46, transparent);
+}
+
+.jsmbtn_4inv {
+  background: #a64db6;
+}
+
+.jsmbtn_4inv::before {
+  background: radial-gradient(circle closest-side, #f1ca74, transparent);
+}
+
+.jsmbtn_5inv {
+  background: #32ccbc;
+}
+
+.jsmbtn_5inv::before {
+  background: radial-gradient(circle closest-side, #90f7ec, transparent);
+}
+
+.jsmbtn_6inv {
+  background: #f067b4;
+}
+
+.jsmbtn_6inv::before {
+  background: radial-gradient(circle closest-side, #81ffef, transparent);
+}
+
+.jsmbtn_7inv {
+  background: #736efe;
+}
+
+.jsmbtn_7inv::before {
+  background: radial-gradient(circle closest-side, #5efce8, transparent);
+}
+
+.jsmbtn_8inv {
+  background: #28c76f;
+}
+
+.jsmbtn_8inv::before {
+  background: radial-gradient(circle closest-side, #81fbb8, transparent);
+}
+
+.jsmbtn_9inv {
+  background: #0e5cad;
+}
+
+.jsmbtn_9inv::before {
+  background: radial-gradient(circle closest-side, #79f1a4, transparent);
+}
+
+.jsmbtn_10inv {
+  background: #24d0cd;
+}
+
+.jsmbtn_10inv::before {
+  background: radial-gradient(circle closest-side, #83fc33, transparent);
+}
+
+.jsmbtn_11inv {
+  background: #fdd819;
+}
+
+.jsmbtn_11inv::before {
+  background: radial-gradient(circle closest-side, #e80505, transparent);
+}
+
+.jsmbtn_12inv{
+  background: #fff6B7;
+}
+
+.jsmbtn_12inv::before {
+  background: radial-gradient(circle closest-side, #f6416c, transparent);
+}
+
+.jsmbtn_13inv {
+  background: #fed148;
+}
+
+.jsmbtn_13inv::before {
+  background: radial-gradient(circle closest-side, #d6308d, transparent);
+}
+
+.jsmbtn_14inv {
+  background: #8e38e3;
+}
+
+.jsmbtn_14inv::before {
+  background: radial-gradient(circle closest-side, #d765e3, transparent);
+}
+
+.jsmbtn_15inv {
+  background: #fb2399;
+}
+
+.jsmbtn_15inv::before {
+  background: radial-gradient(circle closest-side, #8e37e4, transparent);
+}
+
+    
